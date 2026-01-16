@@ -5,126 +5,266 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blue Collar Dogs | Boulder Dog Training</title>
   <meta name="description" content="Professional dog training in Boulder, CO. A working dog is a happy dog. Transform challenges into growth with patience-based behavioral training.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
     <nav class="nav">
       <a href="#" class="logo">Blue Collar Dogs</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#approach">Approach</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-nav">Book Now</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <h1>A Working Dog is a Happy Dog</h1>
-        <p class="hero-subtitle">Patience-based training that builds real relationships between you and your dog.</p>
-        <a href="#contact" class="btn btn-primary">Start Training</a>
+        <p class="hero-subtitle">Professional dog training in Boulder, Colorado. Build a genuine partnership with your dog through balanced guidance and earned trust.</p>
+        <a href="#contact" class="btn btn-primary">Book Now</a>
       </div>
     </section>
 
-    <section id="approach" class="approach">
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy">
       <div class="container">
-        <h2>Training That Works With Nature</h2>
-        <p class="section-intro">Dogs thrive when they have purpose. Our approach combines natural canine psychology with patient, consistent guidance to create lasting positive change.</p>
+        <div class="philosophy-content">
+          <h2>Boundaries. Bonding. Balance.</h2>
+          <p class="lead">Dogs thrive when given purpose and structure—not when treated as accessories. Our natural approach embraces dog psychology and behavior modification to build healthy relationships between handlers and their dogs.</p>
+          <blockquote>
+            "Train with your dog, not to your dog. That shift changes everything."
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
-        <div class="principles">
-          <div class="principle">
-            <h3>Understanding</h3>
-            <p>Every dog has a unique personality. We tailor our methods to match your dog's needs, not the other way around.</p>
-          </div>
-          <div class="principle">
-            <h3>Patience</h3>
-            <p>Real transformation takes time. We work at your dog's pace, building confidence through consistency.</p>
-          </div>
-          <div class="principle">
-            <h3>Relationship</h3>
-            <p>Training isn't about commands—it's about communication. We help you understand your dog's language.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>Meet Zane Marsh</h2>
+            <p class="lead">With a bachelor's degree in psychology, a minor in neuroscience, and advanced coursework in canine cognition and behavior, Zane combines theoretical knowledge with hands-on expertise developed through mentorship under both a psychologist and Schutzhund dog trainer.</p>
+            <p>His methodology emphasizes training <em>with</em> dogs rather than <em>to</em> them—shifting from power struggles toward genuine partnership. Zane creates individualized training plans for each dog-handler team, avoiding extreme methods in favor of balanced guidance and earned trust.</p>
+            <p>He recognizes dogs as intelligent, capable partners with untapped potential, and works with all ages, breeds, and behavioral challenges. Handler education is emphasized alongside dog training, empowering you to lead with fairness and clarity.</p>
+            <div class="about-principles">
+              <div class="principle-item">
+                <strong>Patience</strong>
+                <span>Real transformation takes time</span>
+              </div>
+              <div class="principle-item">
+                <strong>Consistency</strong>
+                <span>Clear expectations build trust</span>
+              </div>
+              <div class="principle-item">
+                <strong>Objectivity</strong>
+                <span>Understanding without judgment</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="services">
       <div class="container">
-        <h2>Services</h2>
-        <p class="section-intro">From puppies to behavioral challenges, we meet you where you are.</p>
+        <h2>Training Services</h2>
+        <p class="section-intro">From puppies to behavioral challenges, we meet you where you are with individualized training plans.</p>
 
         <div class="service-grid">
+          <!-- Training Packages -->
           <div class="service-card">
-            <h3>Puppy & Intro Training</h3>
-            <p>Build a strong foundation with your new companion. Four sessions covering basics, socialization, and healthy habits.</p>
-            <span class="price">$450 <span class="price-detail">4 sessions</span></span>
+            <span class="service-tag">Foundation</span>
+            <h3>Puppy & Introductory Training</h3>
+            <p>Four 45-minute sessions geared towards younger dogs where we focus on developing healthy habits and behaviors. Learn essential commands like sit, stay, and leave it while building a strong foundation for your relationship.</p>
+            <div class="price-block">
+              <span class="price">$450</span>
+              <span class="price-detail">4 sessions (45 min each)</span>
+              <span class="price-alt">Individual sessions: $85</span>
+            </div>
           </div>
 
           <div class="service-card">
-            <h3>General Handling</h3>
-            <p>Learn to understand your dog's behavior and communicate effectively. Perfect for handlers who want to deepen their connection.</p>
-            <span class="price">$600</span>
+            <span class="service-tag">Essential</span>
+            <h3>General Handling & Understanding Dogs</h3>
+            <p>Four 60-minute sessions where you will learn everything you need to know about fixing simple, everyday situations with your dog. Covers loose-leash walks, crate training, and obedience fundamentals.</p>
+            <div class="price-block">
+              <span class="price">$600</span>
+              <span class="price-detail">4 sessions (60 min each)</span>
+              <span class="price-alt">Individual sessions: $125</span>
+            </div>
           </div>
 
           <div class="service-card">
+            <span class="service-tag">Advanced</span>
             <h3>Advanced Obedience</h3>
-            <p>Take your training to the next level. Refined commands, off-leash reliability, and real-world proofing.</p>
-            <span class="price">$175 <span class="price-detail">per session</span></span>
+            <p>60-90 minute intensive obedience sessions best for well-trained dogs who already have a strong grasp of the basics. Includes heel work, off-leash reliability, and specialized skills like scent tracking.</p>
+            <div class="price-block">
+              <span class="price">$175</span>
+              <span class="price-detail">per session (60-90 min)</span>
+            </div>
           </div>
 
           <div class="service-card featured">
+            <span class="service-tag">Specialized</span>
             <h3>Behavioral Transformation</h3>
-            <p>For dogs facing anxiety, reactivity, or aggression. We transform challenges into opportunities for growth.</p>
-            <span class="price">$900 <span class="price-detail">full package</span></span>
+            <p>Turn challenging behaviors into opportunities for growth with our specialized behavior modification program. Targets anxiety, fear, reactivity, aggression, hyperactivity, destructive habits, and resource guarding.</p>
+            <div class="price-block">
+              <span class="price">$900</span>
+              <span class="price-detail">Full package</span>
+              <span class="price-alt">Individual sessions: $150</span>
+            </div>
           </div>
 
           <div class="service-card">
+            <span class="service-tag">Training</span>
+            <h3>Day Training</h3>
+            <p>Build lasting obedience and confidence through our focused day training program, where your dog learns directly from a professional trainer while you're at work or away.</p>
+            <div class="price-block">
+              <span class="price">Contact for pricing</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Dog Walking & Care</h3>
+        <p class="section-intro">Exercise, enrichment, and reinforcement of training when you need support.</p>
+
+        <div class="service-grid service-grid-small">
+          <div class="service-card compact">
             <h3>Pack Walks</h3>
-            <p>Socialization and exercise in a structured group setting. Dogs learn from each other in a calm, controlled environment.</p>
-            <span class="price">$50 <span class="price-detail">90 minutes</span></span>
+            <p>90-minute sessions where we take 2-5 dogs out together on hikes. The perfect alternative to doggy daycare—dogs learn social skills in a structured, calm environment.</p>
+            <div class="price-block">
+              <span class="price">$50</span>
+              <span class="price-detail">90 minutes</span>
+            </div>
           </div>
 
-          <div class="service-card">
-            <h3>Individual Walks & Visits</h3>
-            <p>One-on-one attention when you need it. Exercise, enrichment, and reinforcement of training.</p>
-            <span class="price">$40 <span class="price-detail">per hour</span></span>
+          <div class="service-card compact">
+            <h3>1-on-1 Dog Walks</h3>
+            <p>30-60 minute individual neighborhood walks where we work on exercising your dog and reinforcing good behaviors on a leash.</p>
+            <div class="price-block">
+              <span class="price">$40</span>
+              <span class="price-detail">per hour</span>
+            </div>
+          </div>
+
+          <div class="service-card compact">
+            <h3>Drop-In Visits</h3>
+            <p>30-60 minute visits where we can walk, feed, water, and play with your dog while you are away from home.</p>
+            <div class="price-block">
+              <span class="price">$40</span>
+              <span class="price-detail">per hour</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-content">
-          <h2>About Zane</h2>
-          <p>I believe every dog deserves to feel confident and purposeful. Based in Boulder, I've dedicated my practice to understanding canine psychology and helping dogs and their humans build relationships based on trust and clear communication.</p>
-          <p>My methods emphasize patience, consistency, timeliness, and objectivity. There's no force here—just a deep respect for what dogs need to thrive.</p>
-        </div>
-      </div>
-    </section>
-
+    <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2>Ready to Start?</h2>
-        <p class="section-intro">Let's talk about your dog and find the right path forward.</p>
+        <div class="contact-grid">
+          <div class="contact-content">
+            <h2>Ready to Start?</h2>
+            <p>Let's talk about your dog and find the right path forward. Every dog is unique, and we'll work together to create a plan that fits your needs.</p>
 
-        <div class="contact-info">
-          <p><strong>Location:</strong> Boulder, Colorado</p>
-          <p><strong>Email:</strong> <a href="mailto:zane@blucollardogs.com">zane@blucollardogs.com</a></p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <strong>Phone</strong>
+                <a href="tel:+15135041593">(513) 504-1593</a>
+              </div>
+              <div class="contact-item">
+                <strong>Location</strong>
+                <span>Boulder, Colorado</span>
+              </div>
+              <div class="contact-item">
+                <strong>Social</strong>
+                <a href="https://www.facebook.com/BlueCollarDogsBoulderCO" target="_blank" rel="noopener">Facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interest</label>
+                <select id="service" name="service">
+                  <option value="">Select a service...</option>
+                  <option value="puppy">Puppy & Introductory Training</option>
+                  <option value="handling">General Handling</option>
+                  <option value="advanced">Advanced Obedience</option>
+                  <option value="behavioral">Behavioral Transformation</option>
+                  <option value="day-training">Day Training</option>
+                  <option value="pack-walks">Pack Walks</option>
+                  <option value="walks">Dog Walks</option>
+                  <option value="drop-in">Drop-In Visits</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell us about your dog</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+          </div>
         </div>
-
-        <a href="mailto:zane@blucollardogs.com" class="btn btn-primary">Get In Touch</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Blue Collar Dogs. Boulder, Colorado.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo">Blue Collar Dogs</span>
+          <p>Professional dog training in Boulder, Colorado.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Blue Collar Dogs. Boulder, Colorado.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
