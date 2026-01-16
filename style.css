@@ -350,46 +350,7 @@ p {
   margin: 0;
 }
 
-/* Trust Bar */
-.trust-bar {
-  background: var(--color-primary);
-  padding: 1.5rem 0;
-}
-
-.trust-items {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
-
-.trust-item {
-  text-align: center;
-  color: white;
-}
-
-.trust-item strong {
-  display: block;
-  font-size: 0.9375rem;
-  font-weight: 600;
-}
-
-.trust-item span {
-  font-size: 0.8125rem;
-  opacity: 0.8;
-}
-
-@media (max-width: 600px) {
-  .trust-items {
-    gap: 1.5rem;
-  }
-
-  .trust-item {
-    flex: 0 0 40%;
-  }
-}
-
-/* Problems Section */
+/* What I Help With Section */
 .problems {
   padding: var(--section-padding) 0;
   background: var(--color-bg);
@@ -397,75 +358,33 @@ p {
 
 .problems h2 {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .problem-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .problem-card {
   text-align: center;
-  padding: 2rem;
-}
-
-.problem-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1.5rem;
   background: var(--color-bg-alt);
-  border-radius: 50%;
-  color: var(--color-primary);
+  border-radius: 8px;
 }
 
 .problem-card h3 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
 }
 
 .problem-card p {
   color: var(--color-text-light);
   margin: 0;
   font-size: 0.9375rem;
-}
-
-.problem-solution {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid var(--color-border);
-}
-
-.solution-intro {
-  font-size: 0.9375rem;
-  color: var(--color-text-muted);
-  margin-bottom: 1rem;
-}
-
-.problem-solution blockquote {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-style: italic;
-  color: var(--color-primary);
-  line-height: 1.5;
-  margin: 0 0 0.5rem;
-}
-
-.problem-solution blockquote em {
-  color: var(--color-accent);
-  font-style: italic;
-}
-
-.solution-author {
-  font-size: 0.9375rem;
-  color: var(--color-text-muted);
-  margin: 0;
 }
 
 /* About Section */
@@ -669,35 +588,9 @@ p {
 }
 
 .category-title {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.375rem;
+  margin-bottom: 1.25rem;
   color: var(--color-primary);
-}
-
-.category-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: var(--color-accent);
-  border-radius: 8px;
-  color: white;
-}
-
-.category-desc {
-  color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
-  padding-left: 52px;
-}
-
-@media (max-width: 600px) {
-  .category-desc {
-    padding-left: 0;
-  }
 }
 
 .service-grid {
@@ -792,56 +685,6 @@ p {
   font-size: 1.0625rem;
   color: var(--color-text-light);
   margin-bottom: 1rem;
-}
-
-/* Process Section */
-.process {
-  padding: var(--section-padding) 0;
-  background: var(--color-primary);
-  color: white;
-}
-
-.process h2 {
-  text-align: center;
-  color: white;
-  margin-bottom: 3rem;
-}
-
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.process-step {
-  text-align: center;
-}
-
-.step-number {
-  width: 56px;
-  height: 56px;
-  background: var(--color-accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0 auto 1rem;
-}
-
-.process-step h3 {
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.process-step p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9375rem;
-  margin: 0;
 }
 
 /* Contact Section */
